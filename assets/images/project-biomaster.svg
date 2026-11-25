@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08141E"/>
+      <stop offset="100%" stop-color="#0A1E2C"/>
+    </linearGradient>
+    <linearGradient id="bioCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F283C"/>
+      <stop offset="100%" stop-color="#091A27"/>
+    </linearGradient>
+    <linearGradient id="emeraldNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="neonBioGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bgBio)"/>
+
+  <!-- Browser Chrome Top Bar -->
+  <rect width="800" height="42" rx="16" fill="#07131D"/>
+  <rect y="26" width="800" height="16" fill="#07131D"/>
+  <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="21" r="5" fill="#10B981"/>
+  
+  <!-- Address Bar -->
+  <rect x="90" y="10" width="340" height="22" rx="6" fill="#0D2335"/>
+  <text x="110" y="26" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10B981">https://biomaster-edu.uz/interactive-quiz</text>
+  <circle cx="102" cy="21" r="3" fill="#10B981"/>
+
+  <!-- Left Sidebar / Navigation -->
+  <rect x="25" y="60" width="180" height="415" rx="12" fill="url(#bioCardGrad)" stroke="#13364E" stroke-width="1"/>
+  <!-- BioMaster Brand -->
+  <circle cx="50" cy="90" r="14" fill="url(#emeraldNeon)"/>
+  <text x="72" y="95" font-family="sans-serif" font-size="14" font-weight="bold" fill="#F8FAFC">BioMaster</text>
+  
+  <!-- Nav Menu Items -->
+  <rect x="35" y="125" width="160" height="32" rx="6" fill="#13364E"/>
+  <text x="65" y="145" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8">🧬 Testlar va Quiz</text>
+  <rect x="35" y="165" width="160" height="32" rx="6" fill="transparent"/>
+  <text x="65" y="185" font-family="sans-serif" font-size="11" fill="#94A3B8">🔬 3D Anatomiya</text>
+  <rect x="35" y="205" width="160" height="32" rx="6" fill="transparent"/>
+  <text x="65" y="225" font-family="sans-serif" font-size="11" fill="#94A3B8">📚 Konspektlar</text>
+  <rect x="35" y="245" width="160" height="32" rx="6" fill="transparent"/>
+  <text x="65" y="265" font-family="sans-serif" font-size="11" fill="#94A3B8">🏆 Reyting & Ball</text>
+
+  <!-- Student Progress Widget in Sidebar -->
+  <rect x="35" y="375" width="160" height="85" rx="8" fill="#0A1D2B" stroke="#10B981" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="47" y="398" font-family="sans-serif" font-size="11" font-weight="bold" fill="#F8FAFC">Mening Natijam</text>
+  <text x="47" y="424" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="bold" fill="#10B981">94.5% A+</text>
+  <rect x="47" y="437" width="136" height="6" rx="3" fill="#13364E"/>
+  <rect x="47" y="437" width="128" height="6" rx="3" fill="url(#emeraldNeon)"/>
+
+  <!-- Main Content Area -->
+  <g transform="translate(225, 60)">
+    <!-- Active Quiz Card Banner -->
+    <rect width="550" height="130" rx="12" fill="url(#bioCardGrad)" stroke="#10B981" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="25" y="35" font-family="sans-serif" font-size="16" font-weight="bold" fill="#F8FAFC">Mavzu: Molekulyar Biologiya & DNK Replikatsiyasi</text>
+    <text x="25" y="58" font-family="sans-serif" font-size="12" fill="#94A3B8">30 ta savoldan 18-tasi yechildi | Qolgan vaqt: 24:15</text>
+    
+    <!-- DNA Strand graphic visual in banner -->
+    <g transform="translate(370, 20)">
+      <path d="M 0 35 Q 35 5 70 35 T 140 35" fill="none" stroke="#38BDF8" stroke-width="3" opacity="0.8"/>
+      <path d="M 0 35 Q 35 65 70 35 T 140 35" fill="none" stroke="#10B981" stroke-width="3" opacity="0.8"/>
+      <line x1="20" y1="23" x2="20" y2="47" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="50" y1="18" x2="50" y2="52" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="85" y1="30" x2="85" y2="40" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="120" y1="20" x2="120" y2="50" stroke="#94A3B8" stroke-width="2"/>
+    </g>
+
+    <rect x="25" y="80" width="495" height="10" rx="5" fill="#0A1D2B"/>
+    <rect x="25" y="80" width="310" height="10" rx="5" fill="url(#emeraldNeon)" filter="url(#neonBioGlow)"/>
+    <rect x="25" y="80" width="310" height="10" rx="5" fill="url(#emeraldNeon)"/>
+
+    <text x="25" y="112" font-family="sans-serif" font-size="11" fill="#38BDF8">Test holati: Faol</text>
+    <text x="470" y="112" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10B981">60% TUGALLANDI</text>
+
+    <!-- Quiz Question & Interactive Options -->
+    <rect y="150" width="550" height="265" rx="12" fill="url(#bioCardGrad)" stroke="#13364E" stroke-width="1"/>
+    
+    <text x="25" y="185" font-family="sans-serif" font-size="13" font-weight="600" fill="#38BDF8">Savol 19 / 30:</text>
+    <text x="25" y="210" font-family="sans-serif" font-size="14" font-weight="bold" fill="#F8FAFC">DNK spiralida Adenin (A) har doim qaysi azot asosi bilan komplementar juft hosil qiladi?</text>
+
+    <!-- Option A -->
+    <rect x="25" y="235" width="495" height="42" rx="8" fill="#0A1E2C" stroke="#13364E" stroke-width="1"/>
+    <circle cx="50" cy="256" r="10" fill="#13364E"/>
+    <text x="50" y="260" font-family="sans-serif" font-size="11" font-weight="bold" fill="#94A3B8" text-anchor="middle">A</text>
+    <text x="75" y="260" font-family="sans-serif" font-size="13" fill="#E2E8F0">Guanin (G) — 3 ta vodorod bog'i orqali</text>
+
+    <!-- Option B (Selected / Correct) -->
+    <rect x="25" y="287" width="495" height="42" rx="8" fill="#0E2D2F" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="50" cy="308" r="10" fill="#10B981"/>
+    <text x="50" y="312" font-family="sans-serif" font-size="11" font-weight="bold" fill="#06191D" text-anchor="middle">✓</text>
+    <text x="75" y="312" font-family="sans-serif" font-size="13" font-weight="bold" fill="#10B981">Timin (T) — 2 ta vodorod bog'i orqali</text>
+
+    <!-- Option C -->
+    <rect x="25" y="339" width="495" height="42" rx="8" fill="#0A1E2C" stroke="#13364E" stroke-width="1"/>
+    <circle cx="50" cy="360" r="10" fill="#13364E"/>
+    <text x="50" y="364" font-family="sans-serif" font-size="11" font-weight="bold" fill="#94A3B8" text-anchor="middle">C</text>
+    <text x="75" y="364" font-family="sans-serif" font-size="13" fill="#E2E8F0">Sitozin (C) — 2 ta vodorod bog'i orqali</text>
+
+    <!-- Next Question Button -->
+    <rect x="400" y="390" width="120" height="20" rx="10" fill="url(#emeraldNeon)"/>
+    <text x="460" y="404" font-family="sans-serif" font-size="10" font-weight="bold" fill="#07131D" text-anchor="middle">Keyingi Savol →</text>
+  </g>
+</svg>

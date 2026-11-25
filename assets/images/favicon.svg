@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="favCyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="favViolet" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="60%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <linearGradient id="favShardCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="40%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+
+    <linearGradient id="favShardPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="60%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+
+    <filter id="favNeon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Obsidian Container -->
+  <rect width="100" height="100" rx="22" fill="#070B14"/>
+  <rect x="2" y="2" width="96" height="96" rx="20" fill="#0D1424" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Quantum KC Cipher Emblem Scaled to Favicon -->
+  <g transform="translate(14, 14) scale(0.72)" filter="url(#favNeon)">
+    <!-- 1. Left Pillar -->
+    <rect x="10" y="8" width="14" height="68" rx="5" fill="url(#favShardCyan)"/>
+
+    <!-- 2. Upper Diagonal (K top arm) -->
+    <path d="M 28 36 L 56 12 C 60 8, 66 8, 70 12 L 76 18 C 80 22, 79 28, 75 32 L 48 50 Z" fill="url(#favShardCyan)"/>
+
+    <!-- 3. Lower Diagonal (K bottom arm) -->
+    <path d="M 48 40 L 75 60 C 79 64, 80 70, 76 74 L 70 80 C 66 84, 60 84, 56 80 L 28 54 Z" fill="url(#favShardPurple)"/>
+
+    <!-- 4. Sweeping C Outer Shield -->
+    <path d="M 68 5 C 85 5, 96 18, 97 34 L 84 34 C 82 24, 75 16, 65 16 L 58 16 C 55 16, 53 13, 56 10 L 61 5 Z" fill="url(#favCyanBlue)"/>
+    <path d="M 68 85 C 85 85, 96 72, 97 56 L 84 56 C 82 66, 75 74, 65 74 L 58 74 C 55 74, 53 77, 56 80 L 61 85 Z" fill="url(#favViolet)"/>
+
+    <!-- Central Nexus -->
+    <circle cx="36" cy="45" r="4.5" fill="#FFFFFF"/>
+    <circle cx="36" cy="45" r="2.5" fill="#38BDF8"/>
+  </g>
+</svg>

@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgIsh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E1C"/>
+      <stop offset="100%" stop-color="#0E172E"/>
+    </linearGradient>
+    <linearGradient id="ishCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213B"/>
+      <stop offset="100%" stop-color="#0F1A30"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <filter id="neonIsh" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bgIsh)"/>
+
+  <!-- Browser Chrome Top Bar -->
+  <rect width="800" height="42" rx="16" fill="#0A1224"/>
+  <rect y="26" width="800" height="16" fill="#0A1224"/>
+  <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="21" r="5" fill="#10B981"/>
+  
+  <!-- Address Bar -->
+  <rect x="90" y="10" width="340" height="22" rx="6" fill="#131E38"/>
+  <text x="110" y="26" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">https://ishtop.uz/vacancies?role=developer</text>
+  <circle cx="102" cy="21" r="3" fill="#10B981"/>
+
+  <!-- Portal Header Bar -->
+  <g transform="translate(25, 58)">
+    <rect width="750" height="60" rx="10" fill="url(#ishCardGrad)" stroke="#1F3155" stroke-width="1"/>
+    <!-- Logo -->
+    <text x="25" y="37" font-family="sans-serif" font-size="18" font-weight="900" fill="#F8FAFC">Ish<tspan fill="#38BDF8">Top</tspan>.uz</text>
+    
+    <!-- Search Inputs Mockup -->
+    <rect x="150" y="14" width="220" height="32" rx="6" fill="#0A1224" stroke="#1E2F52" stroke-width="1"/>
+    <text x="165" y="34" font-family="sans-serif" font-size="11" fill="#94A3B8">🔍 Mutaxassislik, lavozim...</text>
+
+    <rect x="385" y="14" width="160" height="32" rx="6" fill="#0A1224" stroke="#1E2F52" stroke-width="1"/>
+    <text x="400" y="34" font-family="sans-serif" font-size="11" fill="#94A3B8">📍 Toshkent / Masofaviy</text>
+
+    <!-- Find Button -->
+    <rect x="560" y="14" width="100" height="32" rx="6" fill="url(#blueGlow)"/>
+    <text x="610" y="34" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Izlash</text>
+
+    <!-- Post Vacancy Button -->
+    <rect x="670" y="14" width="70" height="32" rx="6" fill="#1F3155"/>
+    <text x="705" y="34" font-family="sans-serif" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="middle">+ Vakansiya</text>
+  </g>
+
+  <!-- Left Filter Column -->
+  <g transform="translate(25, 130)">
+    <rect width="210" height="345" rx="10" fill="url(#ishCardGrad)" stroke="#1F3155" stroke-width="1"/>
+    <text x="20" y="32" font-family="sans-serif" font-size="13" font-weight="bold" fill="#F8FAFC">Filtrlar (1,420 ish)</text>
+    <line x1="20" y1="45" x2="190" y2="45" stroke="#1E2F52" stroke-width="1"/>
+
+    <!-- Category Filter Checkboxes -->
+    <text x="20" y="70" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8">Yo'nalishlar</text>
+    
+    <rect x="20" y="85" width="12" height="12" rx="3" fill="#38BDF8"/>
+    <text x="40" y="96" font-family="sans-serif" font-size="11" fill="#F8FAFC">IT va Dasturlash (428)</text>
+
+    <rect x="20" y="112" width="12" height="12" rx="3" fill="#0A1224" stroke="#1E2F52"/>
+    <text x="40" y="123" font-family="sans-serif" font-size="11" fill="#94A3B8">Dizayn & UI/UX (154)</text>
+
+    <rect x="20" y="139" width="12" height="12" rx="3" fill="#0A1224" stroke="#1E2F52"/>
+    <text x="40" y="150" font-family="sans-serif" font-size="11" fill="#94A3B8">Marketing & SMM (98)</text>
+
+    <text x="20" y="185" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8">Ish formati</text>
+    <rect x="20" y="200" width="12" height="12" rx="3" fill="#38BDF8"/>
+    <text x="40" y="211" font-family="sans-serif" font-size="11" fill="#F8FAFC">Masofaviy (Remote)</text>
+    <rect x="20" y="227" width="12" height="12" rx="3" fill="#0A1224" stroke="#1E2F52"/>
+    <text x="40" y="238" font-family="sans-serif" font-size="11" fill="#94A3B8">Ofis / Gibrid</text>
+
+    <!-- Experience -->
+    <text x="20" y="272" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8">Maosh darajasi</text>
+    <text x="20" y="295" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">$800 - $3,500+</text>
+    <rect x="20" y="308" width="170" height="6" rx="3" fill="#0A1224"/>
+    <rect x="50" y="308" width="100" height="6" rx="3" fill="url(#blueGlow)"/>
+  </g>
+
+  <!-- Right Vacancies List -->
+  <g transform="translate(250, 130)">
+    <!-- Job Card 1 (Hot Vacancy) -->
+    <g>
+      <rect width="525" height="105" rx="10" fill="url(#ishCardGrad)" stroke="#38BDF8" stroke-width="1.2" filter="url(#neonIsh)"/>
+      <rect width="525" height="105" rx="10" fill="url(#ishCardGrad)" stroke="#38BDF8" stroke-width="1"/>
+      
+      <!-- Company Logo Icon -->
+      <rect x="18" y="18" width="48" height="48" rx="8" fill="#1E2F52"/>
+      <text x="42" y="48" font-family="sans-serif" font-size="16" font-weight="bold" fill="#38BDF8" text-anchor="middle">⚡</text>
+
+      <!-- Details -->
+      <text x="80" y="35" font-family="sans-serif" font-size="14" font-weight="bold" fill="#F8FAFC">Senior Python / Django Dasturchi</text>
+      <text x="80" y="54" font-family="sans-serif" font-size="11" fill="#94A3B8">Fintech Global Solutions • Masofaviy • To'liq bandlik</text>
+      
+      <!-- Tech Pills -->
+      <rect x="80" y="68" width="55" height="20" rx="4" fill="#0A1224" stroke="#1E2F52"/>
+      <text x="107" y="82" font-family="sans-serif" font-size="9" fill="#38BDF8" text-anchor="middle">Python</text>
+
+      <rect x="142" y="68" width="55" height="20" rx="4" fill="#0A1224" stroke="#1E2F52"/>
+      <text x="169" y="82" font-family="sans-serif" font-size="9" fill="#38BDF8" text-anchor="middle">Django</text>
+
+      <rect x="204" y="68" width="65" height="20" rx="4" fill="#0A1224" stroke="#1E2F52"/>
+      <text x="236" y="82" font-family="sans-serif" font-size="9" fill="#38BDF8" text-anchor="middle">PostgreSQL</text>
+
+      <!-- Salary & Apply -->
+      <text x="505" y="38" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#10B981" text-anchor="end">$2,200 - $3,000</text>
+      <rect x="420" y="62" width="85" height="28" rx="6" fill="url(#blueGlow)"/>
+      <text x="462" y="80" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Ariza topshirish</text>
+    </g>
+
+    <!-- Job Card 2 -->
+    <g transform="translate(0, 120)">
+      <rect width="525" height="105" rx="10" fill="url(#ishCardGrad)" stroke="#1F3155" stroke-width="1"/>
+      <rect x="18" y="18" width="48" height="48" rx="8" fill="#1E2F52"/>
+      <text x="42" y="48" font-family="sans-serif" font-size="16" font-weight="bold" fill="#F59E0B" text-anchor="middle">💻</text>
+
+      <text x="80" y="35" font-family="sans-serif" font-size="14" font-weight="bold" fill="#F8FAFC">Frontend Vue / React Developer</text>
+      <text x="80" y="54" font-family="sans-serif" font-size="11" fill="#94A3B8">TechLabs Tashkent • Toshkent ofis • Gibrid</text>
+
+      <rect x="80" y="68" width="70" height="20" rx="4" fill="#0A1224" stroke="#1E2F52"/>
+      <text x="115" y="82" font-family="sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">JavaScript</text>
+
+      <rect x="157" y="68" width="60" height="20" rx="4" fill="#0A1224" stroke="#1E2F52"/>
+      <text x="187" y="82" font-family="sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">Bootstrap</text>
+
+      <text x="505" y="38" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#10B981" text-anchor="end">$1,400 - $2,000</text>
+      <rect x="420" y="62" width="85" height="28" rx="6" fill="#1E2F52"/>
+      <text x="462" y="80" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8" text-anchor="middle">Batafsil</text>
+    </g>
+
+    <!-- Job Card 3 -->
+    <g transform="translate(0, 240)">
+      <rect width="525" height="105" rx="10" fill="url(#ishCardGrad)" stroke="#1F3155" stroke-width="1"/>
+      <rect x="18" y="18" width="48" height="48" rx="8" fill="#1E2F52"/>
+      <text x="42" y="48" font-family="sans-serif" font-size="16" font-weight="bold" fill="#10B981" text-anchor="middle">🚀</text>
+
+      <text x="80" y="35" font-family="sans-serif" font-size="14" font-weight="bold" fill="#F8FAFC">Junior / Middle Full Stack Engineer</text>
+      <text x="80" y="54" font-family="sans-serif" font-size="11" fill="#94A3B8">Digital Startups Hub • Masofaviy</text>
+
+      <rect x="80" y="68" width="55" height="20" rx="4" fill="#0A1224" stroke="#1E2F52"/>
+      <text x="107" y="82" font-family="sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">Python</text>
+
+      <rect x="142" y="68" width="60" height="20" rx="4" fill="#0A1224" stroke="#1E2F52"/>
+      <text x="172" y="82" font-family="sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">HTML/CSS</text>
+
+      <text x="505" y="38" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#10B981" text-anchor="end">$800 - $1,300</text>
+      <rect x="420" y="62" width="85" height="28" rx="6" fill="#1E2F52"/>
+      <text x="462" y="80" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8" text-anchor="middle">Batafsil</text>
+    </g>
+  </g>
+</svg>

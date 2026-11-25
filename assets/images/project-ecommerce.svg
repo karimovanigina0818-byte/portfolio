@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEcom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1120"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162238"/>
+      <stop offset="100%" stop-color="#111C30"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="neonEcom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bgEcom)"/>
+
+  <!-- Browser Chrome Top Bar -->
+  <rect width="800" height="42" rx="16" fill="#0D1527"/>
+  <rect y="26" width="800" height="16" fill="#0D1527"/>
+  <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="21" r="5" fill="#10B981"/>
+  
+  <!-- Address Bar -->
+  <rect x="90" y="10" width="340" height="22" rx="6" fill="#152138"/>
+  <text x="110" y="26" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">https://karimova-store.uz/shop</text>
+  <circle cx="102" cy="21" r="3" fill="#10B981"/>
+
+  <!-- Top Right Icons in Browser -->
+  <rect x="710" y="10" width="65" height="22" rx="6" fill="#1E2E4E"/>
+  <text x="742" y="25" font-family="sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">Cart (3)</text>
+
+  <!-- Store Header Banner -->
+  <rect x="25" y="60" width="750" height="90" rx="12" fill="url(#cardGrad)" stroke="#1E2E4E" stroke-width="1"/>
+  <rect x="40" y="75" width="220" height="12" rx="4" fill="#38BDF8" opacity="0.9"/>
+  <rect x="40" y="95" width="340" height="8" rx="4" fill="#64748B" opacity="0.6"/>
+  <rect x="40" y="110" width="180" height="8" rx="4" fill="#64748B" opacity="0.4"/>
+  <!-- Banner Button -->
+  <rect x="40" y="125" width="90" height="16" rx="8" fill="url(#accentCyan)"/>
+  <text x="85" y="137" font-family="sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Xarid Qilish</text>
+
+  <!-- Search & Category Pills -->
+  <rect x="25" y="165" width="220" height="30" rx="8" fill="#111C30" stroke="#1E2E4E" stroke-width="1"/>
+  <text x="45" y="185" font-family="sans-serif" font-size="12" fill="#64748B">Qidiruv...</text>
+  <rect x="260" y="165" width="80" height="30" rx="8" fill="url(#accentCyan)"/>
+  <text x="300" y="185" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Barchasi</text>
+  <rect x="350" y="165" width="90" height="30" rx="8" fill="#111C30" stroke="#1E2E4E" stroke-width="1"/>
+  <text x="395" y="184" font-family="sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">Elektronika</text>
+  <rect x="450" y="165" width="90" height="30" rx="8" fill="#111C30" stroke="#1E2E4E" stroke-width="1"/>
+  <text x="495" y="184" font-family="sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">Aksessuarlar</text>
+
+  <!-- Product Card 1 -->
+  <g transform="translate(25, 215)">
+    <rect width="235" height="260" rx="12" fill="url(#cardGrad)" stroke="#1E2E4E" stroke-width="1"/>
+    <!-- Image Box -->
+    <rect x="15" y="15" width="205" height="120" rx="8" fill="#0B1322"/>
+    <circle cx="117" cy="75" r="35" fill="#1E2E4E" opacity="0.6"/>
+    <path d="M100 70 L117 55 L134 70 L134 92 L100 92 Z" fill="#38BDF8" opacity="0.8"/>
+    <!-- Badge -->
+    <rect x="25" y="25" width="48" height="18" rx="9" fill="#10B981" opacity="0.9"/>
+    <text x="49" y="38" font-family="sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">YANGI</text>
+    <!-- Title & Specs -->
+    <rect x="15" y="150" width="140" height="10" rx="4" fill="#F8FAFC"/>
+    <rect x="15" y="168" width="180" height="7" rx="3" fill="#64748B"/>
+    <rect x="15" y="182" width="100" height="7" rx="3" fill="#64748B" opacity="0.5"/>
+    <!-- Price & Button -->
+    <text x="15" y="224" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="bold" fill="#38BDF8">1,250,000 UZS</text>
+    <rect x="15" y="235" width="205" height="28" rx="6" fill="url(#accentCyan)"/>
+    <text x="117" y="253" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Savatga Qo'shish</text>
+  </g>
+
+  <!-- Product Card 2 (Featured with Neon Glow) -->
+  <g transform="translate(282, 215)">
+    <rect width="235" height="260" rx="12" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.8" filter="url(#neonEcom)"/>
+    <rect width="235" height="260" rx="12" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <!-- Image Box -->
+    <rect x="15" y="15" width="205" height="120" rx="8" fill="#0B1322"/>
+    <circle cx="117" cy="75" r="38" fill="#2563EB" opacity="0.3"/>
+    <rect x="87" y="55" width="60" height="42" rx="6" fill="#38BDF8" opacity="0.9"/>
+    <!-- Badge -->
+    <rect x="25" y="25" width="56" height="18" rx="9" fill="#2563EB"/>
+    <text x="53" y="38" font-family="sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">TOP SALE</text>
+    <!-- Title & Specs -->
+    <rect x="15" y="150" width="150" height="10" rx="4" fill="#F8FAFC"/>
+    <rect x="15" y="168" width="175" height="7" rx="3" fill="#64748B"/>
+    <rect x="15" y="182" width="120" height="7" rx="3" fill="#64748B" opacity="0.5"/>
+    <!-- Price & Button -->
+    <text x="15" y="224" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="bold" fill="#38BDF8">2,890,000 UZS</text>
+    <rect x="15" y="235" width="205" height="28" rx="6" fill="url(#accentCyan)"/>
+    <text x="117" y="253" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Savatga Qo'shish</text>
+  </g>
+
+  <!-- Product Card 3 -->
+  <g transform="translate(540, 215)">
+    <rect width="235" height="260" rx="12" fill="url(#cardGrad)" stroke="#1E2E4E" stroke-width="1"/>
+    <!-- Image Box -->
+    <rect x="15" y="15" width="205" height="120" rx="8" fill="#0B1322"/>
+    <circle cx="117" cy="75" r="35" fill="#1E2E4E" opacity="0.6"/>
+    <circle cx="117" cy="75" r="24" fill="#38BDF8" opacity="0.7"/>
+    <!-- Title & Specs -->
+    <rect x="15" y="150" width="130" height="10" rx="4" fill="#F8FAFC"/>
+    <rect x="15" y="168" width="165" height="7" rx="3" fill="#64748B"/>
+    <rect x="15" y="182" width="90" height="7" rx="3" fill="#64748B" opacity="0.5"/>
+    <!-- Price & Button -->
+    <text x="15" y="224" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="bold" fill="#38BDF8">740,000 UZS</text>
+    <rect x="15" y="235" width="205" height="28" rx="6" fill="url(#accentCyan)"/>
+    <text x="117" y="253" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Savatga Qo'shish</text>
+  </g>
+</svg>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KARIMOVA CODER — The Quantum KC Brand Identity</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg: #060911;
+      --card: #0D1424;
+      --border: rgba(56, 189, 248, 0.25);
+      --neon: #38BDF8;
+      --primary: #2563EB;
+      --violet: #8B5CF6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: #F8FAFC;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 2.3rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+    .header h1 span {
+      color: var(--neon);
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+    }
+    .header p {
+      color: #94A3B8;
+      font-size: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 30px;
+      max-width: 1050px;
+      width: 100%;
+    }
+    .logo-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6), 0 0 25px rgba(56, 189, 248, 0.15);
+      transition: all 0.3s ease;
+    }
+    .logo-card:hover {
+      border-color: var(--neon);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 35px rgba(56, 189, 248, 0.35);
+      transform: translateY(-5px);
+    }
+    .preview-box {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 290px;
+      background: #070B14;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .preview-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .card-desc {
+      font-size: 0.88rem;
+      color: #94A3B8;
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 24px;
+      border-radius: 9999px;
+      background: linear-gradient(135deg, var(--primary), #1D4ED8);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-download:hover {
+      background: var(--neon);
+      color: #070B14;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+      transform: translateY(-2px);
+    }
+    .back-btn {
+      margin-top: 35px;
+      color: var(--neon);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .back-btn:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>KARIMOVA <span>CODER</span></h1>
+    <p>The Quantum "KC" Cipher — Redesigned Official Luxury Brand Assets</p>
+  </div>
+
+  <div class="grid">
+    <!-- Full Brand Mark -->
+    <div class="logo-card">
+      <div class="preview-box">
+        <img src="logo-karimovacoder.svg" alt="KARIMOVA CODER Full Brand Mark">
+      </div>
+      <h3 class="card-title">Full Brand Mark Lockup</h3>
+      <p class="card-desc">Bespoke "KARIMOVA" xrom-neon gradient tipografiyasi va maxsus "CODER" cyber-badge nishoni bilan yangilangan to‘liq rasmiy logotip.</p>
+      <a href="logo-karimovacoder.svg" download="KARIMOVACODER-Logo.svg" class="btn-download">
+        <i class="fa-solid fa-download"></i> SVG Yuklab Olish
+      </a>
+    </div>
+
+    <!-- Standalone Monogram Symbol -->
+    <div class="logo-card">
+      <div class="preview-box">
+        <img src="logo-symbol.svg" alt="KC Monogram Symbol">
+      </div>
+      <h3 class="card-title">The Quantum KC Monogram</h3>
+      <p class="card-desc">K va C harflari dasturlash chevronlari va golografik shisha nurlanishi orqali birlashtirilgan original 1:1 vektor nishon.</p>
+      <a href="logo-symbol.svg" download="KARIMOVACODER-Symbol.svg" class="btn-download">
+        <i class="fa-solid fa-download"></i> SVG Yuklab Olish
+      </a>
+    </div>
+  </div>
+
+  <a href="/" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Asosiy Portfolio Saytiga Qaytish</a>
+</body>
+</html>

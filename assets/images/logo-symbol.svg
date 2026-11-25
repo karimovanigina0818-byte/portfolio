@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="neonCyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="cyberViolet" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="shardCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="40%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+
+    <linearGradient id="shardPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="60%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+
+    <!-- Filters for Radiant Holographic Glow -->
+    <filter id="intenseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="24" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="ambientSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="40" result="amb"/>
+      <feMerge>
+        <feMergeNode in="amb"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Holographic Aura -->
+  <circle cx="250" cy="250" r="160" fill="url(#neonCyanBlue)" opacity="0.16" filter="url(#ambientSoft)"/>
+
+  <!-- ========================================================================
+       MASTERPIECE MONOGRAM: THE QUANTUM "KC" CIPHER
+       Constructed from 4 precision-angled cyber-facets:
+       1. Left Apex Stem (K vertical axis)
+       2. Upper Diagonal Chevron (K upper arm meeting C upper terminus)
+       3. Lower Diagonal Chevron (K lower arm meeting C lower terminus)
+       4. Right Radiant Arc (C exterior curvature hugging the code chevron)
+       ======================================================================== -->
+  <g filter="url(#intenseGlow)">
+    
+    <!-- 1. The Left Pillar: Precision Vertical Cyber Shard -->
+    <path d="M 130 140
+             C 130 125, 142 115, 155 115
+             L 175 115
+             C 188 115, 198 125, 198 140
+             L 198 360
+             C 198 375, 188 385, 175 385
+             L 155 385
+             C 142 385, 130 375, 130 360
+             Z"
+          fill="url(#shardCyan)"/>
+
+    <!-- Light Reflection Highlight on Left Pillar -->
+    <path d="M 148 135 L 160 135 L 160 365 L 148 365 Z" fill="#FFFFFF" opacity="0.35"/>
+
+    <!-- 2. The Upper Diagonal: Angular Code Shard (K top wing) -->
+    <path d="M 216 230
+             L 305 132
+             C 314 122, 330 122, 340 132
+             L 358 152
+             C 366 161, 364 176, 354 185
+             L 272 265
+             Z"
+          fill="url(#shardCyan)"/>
+
+    <!-- 3. The Lower Diagonal: Angular Code Shard (K bottom wing) -->
+    <path d="M 272 235
+             L 354 315
+             C 364 324, 366 339, 358 348
+             L 340 368
+             C 330 378, 314 378, 305 368
+             L 216 270
+             Z"
+          fill="url(#shardPurple)"/>
+
+    <!-- 4. The Sweeping "C" Enclosing Shield (Connecting to form the C loop) -->
+    <!-- Top Arc of C -->
+    <path d="M 330 95
+             C 390 95, 435 140, 440 200
+             L 395 200
+             C 390 165, 365 135, 325 135
+             L 300 135
+             C 292 135, 288 125, 294 118
+             L 315 98
+             C 320 96, 325 95, 330 95
+             Z"
+          fill="url(#neonCyanBlue)"/>
+
+    <!-- Bottom Arc of C -->
+    <path d="M 330 405
+             C 390 405, 435 360, 440 300
+             L 395 300
+             C 390 335, 365 365, 325 365
+             L 300 365
+             C 292 365, 288 375, 294 382
+             L 315 402
+             C 320 404, 325 405, 330 405
+             Z"
+          fill="url(#cyberViolet)"/>
+
+    <!-- Glowing Nexus Point in the Center: Where K diagonals cross -->
+    <circle cx="244" cy="250" r="8" fill="#FFFFFF" filter="url(#intenseGlow)"/>
+    <circle cx="244" cy="250" r="4" fill="#38BDF8"/>
+
+    <!-- Geometric Code Bracket Accents: Micro nodes -->
+    <circle cx="440" cy="200" r="4" fill="#38BDF8"/>
+    <circle cx="440" cy="300" r="4" fill="#A855F7"/>
+  </g>
+</svg>

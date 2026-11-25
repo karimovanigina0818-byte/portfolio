@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#0D1424" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#070B14" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#FCD34D" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="250" cy="250" r="230" fill="url(#bgGlow)"/>
+  <circle cx="250" cy="250" r="226" fill="none" stroke="#1E293B" stroke-width="2"/>
+  
+  <!-- Cyber Rings -->
+  <circle cx="250" cy="250" r="216" fill="none" stroke="url(#neonCyan)" stroke-width="2.5" stroke-dasharray="14 10" opacity="0.6"/>
+  <circle cx="250" cy="250" r="195" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="80 180" opacity="0.8" filter="url(#softGlow)"/>
+
+  <!-- Tech circuit nodes in background -->
+  <g opacity="0.3" stroke="#38BDF8" stroke-width="1.5">
+    <path d="M 80 160 L 140 160 L 170 190"/>
+    <circle cx="80" cy="160" r="4" fill="#38BDF8"/>
+    <circle cx="170" cy="190" r="3" fill="#2563EB"/>
+    <path d="M 420 180 L 360 180 L 330 150"/>
+    <circle cx="420" cy="180" r="4" fill="#38BDF8"/>
+    <circle cx="330" cy="150" r="3" fill="#38BDF8"/>
+    <path d="M 90 340 L 150 340 L 170 310"/>
+    <circle cx="90" cy="340" r="4" fill="#38BDF8"/>
+    <path d="M 410 330 L 350 330 L 330 360"/>
+    <circle cx="410" cy="330" r="4" fill="#2563EB"/>
+  </g>
+
+  <!-- Developer Silhouette / Character (Nigina Karimova) -->
+  <g id="character">
+    <!-- Outer glow around figure -->
+    <path d="M 130 460 Q 150 350 210 330 Q 250 325 290 330 Q 350 350 370 460 Z" fill="#2563EB" opacity="0.25" filter="url(#neonBlur)"/>
+
+    <!-- Hair Back -->
+    <path d="M 170 160 C 170 80 330 80 330 160 C 345 220 345 280 325 340 C 310 290 300 240 290 220 C 210 220 200 290 175 340 C 155 280 155 220 170 160 Z" fill="url(#hairGrad)"/>
+
+    <!-- Body / Shoulders & Hoodie/Blazer -->
+    <path d="M 140 450 C 145 375 180 340 215 330 L 250 360 L 285 330 C 320 340 355 375 360 450 C 330 465 170 465 140 450 Z" fill="#111C30" stroke="#1E293B" stroke-width="2"/>
+    <!-- Collar & Cyber Accents on Jacket -->
+    <path d="M 215 330 L 250 390 L 285 330" fill="none" stroke="url(#neonCyan)" stroke-width="3" filter="url(#softGlow)"/>
+    <path d="M 250 390 L 250 450" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+
+    <!-- Neck -->
+    <path d="M 225 260 L 225 335 C 235 342 265 342 275 335 L 275 260 Z" fill="#E2E8F0" opacity="0.85"/>
+
+    <!-- Face Shape -->
+    <path d="M 195 190 C 195 270 215 295 250 295 C 285 295 305 270 305 190 C 305 130 195 130 195 190 Z" fill="#F1F5F9"/>
+
+    <!-- Stylish Hair Front -->
+    <path d="M 185 185 C 190 130 240 105 295 115 C 315 120 320 145 320 175 C 315 150 295 135 265 135 C 220 135 195 155 185 185 Z" fill="#0F172A"/>
+    <path d="M 188 175 C 185 225 175 270 170 290 C 180 260 190 220 195 185 Z" fill="#0F172A"/>
+    <path d="M 305 175 C 312 215 320 255 328 290 C 322 250 315 210 308 175 Z" fill="#0F172A"/>
+
+    <!-- Modern Cyber Developer Glasses -->
+    <g id="glasses" filter="url(#softGlow)">
+      <rect x="202" y="192" width="38" height="24" rx="7" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+      <rect x="260" y="192" width="38" height="24" rx="7" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+      <path d="M 240 203 L 260 203" stroke="#38BDF8" stroke-width="2.5"/>
+      <path d="M 194 200 L 202 201" stroke="#38BDF8" stroke-width="2"/>
+      <path d="M 298 201 L 306 200" stroke="#38BDF8" stroke-width="2"/>
+      <!-- Lens reflection / HUD code line -->
+      <path d="M 207 200 L 230 200" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+      <path d="M 265 200 L 288 200" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="232" cy="207" r="2" fill="#2563EB"/>
+      <circle cx="290" cy="207" r="2" fill="#2563EB"/>
+    </g>
+
+    <!-- Eyes (subtle behind glasses) -->
+    <path d="M 212 205 Q 221 202 230 205" stroke="#334155" stroke-width="2" fill="none"/>
+    <path d="M 270 205 Q 279 202 288 205" stroke="#334155" stroke-width="2" fill="none"/>
+
+    <!-- Eyebrows -->
+    <path d="M 208 186 Q 223 182 235 187" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 265 187 Q 277 182 292 186" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Nose & Smile -->
+    <path d="M 248 215 L 246 235 L 253 236" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 236 256 Q 250 268 264 256" fill="none" stroke="#F43F5E" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Cyber Headset / Audio Piece -->
+    <path d="M 188 190 C 180 190 176 205 178 220 C 180 230 188 234 192 230 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+    <circle cx="184" cy="210" r="3" fill="#38BDF8" filter="url(#softGlow)"/>
+    <path d="M 184 216 Q 192 245 210 248" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- Laptop / Code Base in front -->
+  <g id="codeBase">
+    <!-- Laptop Top Screen Edge -->
+    <path d="M 150 440 L 350 440 L 375 480 L 125 480 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+    <!-- Glowing keyboard notch / apple-like light -->
+    <rect x="230" y="445" width="40" height="3" rx="1.5" fill="#38BDF8" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- Floating Holographic Code Badges inside avatar circle -->
+  <g id="floatingBadges" filter="url(#softGlow)">
+    <!-- Badge 1: <Code/> -->
+    <g transform="translate(60, 230)">
+      <rect width="84" height="32" rx="16" fill="#111C30" fill-opacity="0.85" stroke="#38BDF8" stroke-width="1.2"/>
+      <text x="42" y="21" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#38BDF8" text-anchor="middle">&lt;coder/&gt;</text>
+    </g>
+    <!-- Badge 2: Python / Django -->
+    <g transform="translate(360, 240)">
+      <rect width="80" height="32" rx="16" fill="#111C30" fill-opacity="0.85" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="40" y="21" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#60A5FA" text-anchor="middle">Python</text>
+    </g>
+    <!-- Badge 3: Full Stack -->
+    <g transform="translate(200, 30)">
+      <rect width="100" height="28" rx="14" fill="#0D1424" fill-opacity="0.9" stroke="url(#neonCyan)" stroke-width="1.5"/>
+      <text x="50" y="19" font-family="sans-serif" font-size="11" font-weight="700" fill="#F8FAFC" text-anchor="middle">FULL STACK</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "karimovacoder-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Full Stack Developer Portfolio - Nigina Karimova",
+  "main": "index.html",
+  "scripts": {
+    "start": "python server.py"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "fullstack",
+    "karimovacoder"
+  ],
+  "author": "Nigina Karimova",
+  "license": "MIT"
+}
