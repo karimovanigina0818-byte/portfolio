@@ -97,6 +97,10 @@ const translations = {
     p3_badge: "Platform / Full Stack",
     p3_desc: "Ish beruvchilar va ish qidiruvchilar uchun zamonaviy platforma. Rezyume topshirish tizimi, sohalar, maosh va hududlar bo‘yicha qulay filtrlash hamda kompaniyalar bilan to‘g‘ridan-to‘g‘ri aloqa.",
 
+    // Coming Soon State
+    projects_coming_label: "Loyihalar qo'shilmoqda",
+    projects_coming_sub: "Yangi loyihalar tez orada bu yerda paydo bo'ladi",
+
     // Services
     services_tag: "04. XIZMATLAR",
     services_title: "MENING XIZMATLARIM",
@@ -263,6 +267,10 @@ const translations = {
     p3_badge: "Platform / Full Stack",
     p3_desc: "Современная площадка для работодателей и соискателей. Удобная система подачи резюме, поиск вакансий по категориям, заработной плате и городам, а также профили компаний.",
 
+    // Coming Soon State
+    projects_coming_label: "Проекты добавляются",
+    projects_coming_sub: "Новые проекты скоро появятся здесь",
+
     // Services
     services_tag: "04. УСЛУГИ",
     services_title: "МОИ УСЛУГИ",
@@ -428,6 +436,10 @@ const translations = {
     p3_title: "IshTop",
     p3_badge: "Platform / Full Stack",
     p3_desc: "Career recruitment and job hunting portal. Streamlines applicant resume submissions, smart filtering across industries and salary ranges, employer profiles, and seamless hiring communication.",
+
+    // Coming Soon State
+    projects_coming_label: "Projects coming soon",
+    projects_coming_sub: "New projects will appear here very soon",
 
     // Services
     services_tag: "04. SERVICES",
