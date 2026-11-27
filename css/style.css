@@ -2300,36 +2300,81 @@ textarea.form-control-kc {
 }
 
 /* ==========================================================================
-   Responsive Breakpoints
+   RESPONSIVE BREAKPOINTS — Full Coverage (1200px → 320px)
    ========================================================================== */
-@media (max-width: 991.98px) {
-  .section-title {
-    font-size: 2.2rem;
+
+/* ── 1. Large Tablets / Small Laptops  (max 1199px) ──────────────────────── */
+@media (max-width: 1199.98px) {
+  .custom-navbar {
+    max-width: 100%;
   }
   .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
   }
+  .section-title {
+    font-size: 2.4rem;
+  }
+  .photo-cyber-card {
+    max-width: 460px;
+  }
+  .about-card-left {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+/* ── 2. Tablets  (max 991px) ─────────────────────────────────────────────── */
+@media (max-width: 991.98px) {
+  /* Section spacing */
+  section {
+    padding: 90px 0;
+  }
+  .section-title {
+    font-size: 2.1rem;
+  }
+  .section-header {
+    margin-bottom: 48px;
+  }
+
+  /* Navbar */
   .custom-navbar {
-    height: 64px;
+    height: 62px;
     padding: 0 16px;
     border-radius: 20px 4px 20px 4px;
   }
   .navbar-toggler-kc {
-    display: block;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 3px 10px 3px;
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    color: var(--blue-neon);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+  }
+  .navbar-toggler-kc:hover {
+    background: rgba(56, 189, 248, 0.18);
+    border-radius: 3px 10px 3px 10px;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
   }
   .navbar-collapse-mobile {
     position: fixed;
-    top: 88px;
-    left: 20px;
-    right: 20px;
-    background: rgba(7, 11, 20, 0.98);
-    backdrop-filter: blur(25px);
+    top: 86px;
+    left: 16px;
+    right: 16px;
+    background: rgba(7, 11, 20, 0.97);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
     border: 1px solid var(--border-neon);
     border-radius: 24px 6px 24px 6px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
-    padding: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(56, 189, 248, 0.15);
+    padding: 20px 20px 24px;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     display: none;
     z-index: 1005;
   }
@@ -2339,63 +2384,439 @@ textarea.form-control-kc {
   .navbar-nav {
     flex-direction: column;
     width: 100%;
-    gap: 10px;
+    gap: 6px;
   }
   .nav-link {
     width: 100%;
     text-align: center;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 11px 16px;
+    font-size: 0.98rem;
     border-radius: 12px 3px 12px 3px;
+    background: rgba(56, 189, 248, 0.04);
     transition: all var(--transition-normal);
   }
-  .nav-link:hover {
+  .nav-link:hover, .nav-link.active {
     border-radius: 3px 12px 3px 12px;
+    background: rgba(56, 189, 248, 0.12);
+    color: var(--blue-neon);
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 2.5rem;
   }
   .hero-visual-wrapper {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .photo-cyber-card {
-    max-width: 440px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .photo-terminal-window {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* About */
+  .about-card-left {
+    max-width: 400px;
+    margin: 0 auto 32px;
+  }
+  .about-right .row {
+    gap: 16px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-info-panel {
+    margin-bottom: 32px;
   }
 }
 
+/* ── 3. Mobile Landscape / Large Phones  (max 767px) ────────────────────── */
 @media (max-width: 767.98px) {
+  /* Base */
   section {
-    padding: 75px 0;
+    padding: 72px 0;
+  }
+  .section-title {
+    font-size: 1.9rem;
+    letter-spacing: -0.3px;
+  }
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+  .section-header {
+    margin-bottom: 40px;
+    padding: 0 4px;
+  }
+
+  /* Navbar */
+  .custom-navbar {
+    height: 58px;
+    padding: 0 14px;
+  }
+  .navbar-floating-container {
+    top: 12px;
+    padding: 0 12px;
+  }
+  .brand-name {
+    font-size: 1rem !important;
+  }
+  .brand-badge {
+    font-size: 0.6rem !important;
+    padding: 1px 5px !important;
+  }
+  .navbar-brand-logo .logo-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .navbar-collapse-mobile {
+    top: 78px;
+    left: 12px;
+    right: 12px;
+    padding: 16px 16px 20px;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 60px;
   }
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .hero-greeting {
+    font-size: 0.95rem;
+  }
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .hero-brand-capsule {
+    font-size: 0.78rem;
+    padding: 5px 12px;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
   }
-  .btn-kc-primary, .btn-kc-outline {
+  .btn-kc-primary,
+  .btn-kc-outline {
     width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+    font-size: 0.93rem;
   }
   .hero-socials {
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 8px;
+    gap: 10px;
   }
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .hero-visual-wrapper {
+    margin-top: 32px;
+  }
+  .photo-terminal-window {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .terminal-header {
+    padding: 10px 14px;
+  }
+  .terminal-title {
+    font-size: 0.72rem;
+  }
+  .terminal-badge {
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+
+  /* Floating badges — tighter positioning on mobile */
+  .floating-badge {
+    padding: 6px 10px;
+    font-size: 0.72rem;
+    gap: 5px;
+  }
+  .floating-badge i {
+    font-size: 0.85rem;
+  }
+  .badge-py { top: -10px; right: -8px; }
+  .badge-dj { bottom: 10px; right: -6px; }
+  .badge-js { top: 25px; left: -8px; }
+  .badge-html { bottom: 20px; left: -6px; }
+
+  /* About */
+  .about-avatar-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .about-avatar-wrapper img {
+    border-radius: 16px 4px 16px 4px;
+  }
+  .about-left-details h3 {
+    font-size: 1.2rem;
+  }
+  .about-info-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about-stat-item {
+    padding: 14px 10px;
+  }
+  .about-stat-number {
+    font-size: 1.8rem;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .skill-card {
+    padding: 18px 12px;
+  }
+  .skill-icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+  .skill-name {
+    font-size: 0.82rem;
+  }
+
+  /* Projects coming-soon */
+  .coming-soon-card:nth-child(2),
+  .coming-soon-card:nth-child(3) { display: none; }
+  .cs-center-message {
+    position: static;
+    transform: none;
+    margin-top: 28px;
+  }
+  .projects-coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cs-label {
+    font-size: 1.3rem;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  /* Contact */
+  .contact-form-wrapper {
+    padding: 24px 20px;
+  }
+  .contact-info-panel {
+    padding: 24px 20px;
+  }
+  .contact-method-item {
+    padding: 14px 16px;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
+
+  /* Projects grid */
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  .floating-badge {
-    padding: 7px 14px;
+}
+
+/* ── 4. Small Phones  (max 575px) ────────────────────────────────────────── */
+@media (max-width: 575.98px) {
+  section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  /* Navbar */
+  .custom-navbar {
+    height: 54px;
+    padding: 0 12px;
+  }
+  .btn-nav-contact {
+    display: none !important;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding-top: 90px;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-greeting {
+    font-size: 0.88rem;
+    margin-bottom: 10px;
+  }
+
+  /* About stats row — 2 columns */
+  .about-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Skills — 2 columns */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .skill-card {
+    padding: 14px 10px;
+  }
+  .skill-icon-wrapper {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+  .skill-name {
     font-size: 0.78rem;
+  }
+  .skill-level-bar-wrap {
+    display: none;
+  }
+
+  /* Photo card */
+  .photo-terminal-window {
+    max-width: 300px;
+  }
+  .photo-cyber-card {
+    max-width: 300px;
+  }
+  .floating-badge {
+    font-size: 0.65rem;
+    padding: 5px 8px;
+  }
+  .badge-py { top: -8px; right: -4px; }
+  .badge-dj { bottom: 6px; right: -4px; }
+  .badge-js { top: 20px; left: -4px; }
+  .badge-html { bottom: 14px; left: -4px; }
+
+  /* Contact form */
+  .form-kc-input,
+  .form-kc-textarea {
+    font-size: 0.9rem;
+    padding: 11px 14px;
+  }
+  .btn-submit-kc {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Modal */
+  .modal-kc-body {
+    padding: 20px 16px;
+  }
+
+  /* Section badge */
+  .section-badge {
+    font-size: 0.75rem;
+    padding: 5px 12px;
   }
 }
 
-@media (max-width: 480px) {
+/* ── 5. Extra Small Phones  (max 400px) ──────────────────────────────────── */
+@media (max-width: 400px) {
   .hero-title {
-    font-size: 1.85rem;
+    font-size: 1.6rem;
+  }
+  .section-title {
+    font-size: 1.55rem;
+  }
+  .photo-terminal-window {
+    max-width: 280px;
   }
   .photo-cyber-card {
-    max-width: 320px;
+    max-width: 280px;
   }
-  .badge-py { top: 0; right: -5px; }
-  .badge-dj { bottom: 5px; right: 0; }
-  .badge-js { top: 30px; left: -10px; }
-  .badge-html { bottom: 15px; left: -5px; }
+  .badge-py { top: -6px; right: 0; }
+  .badge-dj { bottom: 4px; right: 0; }
+  .badge-js { top: 16px; left: 0; }
+  .badge-html { bottom: 10px; left: 0; }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .skill-card {
+    padding: 12px 8px;
+  }
+  .skill-icon-wrapper {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  /* Preloader compact */
+  .preloader-content {
+    width: 240px;
+  }
+
+  /* Coming-soon center msg */
+  .cs-spinner-ring {
+    width: 52px;
+    height: 52px;
+  }
+  .cs-label {
+    font-size: 1.15rem;
+  }
+
+  /* Navbar */
+  .navbar-floating-container {
+    top: 8px;
+    padding: 0 8px;
+  }
+  .custom-navbar {
+    height: 50px;
+    padding: 0 10px;
+  }
+  .navbar-collapse-mobile {
+    top: 66px;
+    left: 8px;
+    right: 8px;
+  }
+}
+
+/* ── Utility: prevent overflow on all screens ─────────────────────────────── */
+img, video, canvas, svg {
+  max-width: 100%;
+}
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
 }
